@@ -1,0 +1,60 @@
+# ---------------------------------------------
+# 1. Environnements Virtuels et Fichiers de Cache
+# ---------------------------------------------
+
+# Environnements virtuels créés par Python
+.venv/
+env/
+venv/
+
+# Fichiers de cache Python
+__pycache__/
+*.pyc
+*.pyd
+*.so
+
+# Fichiers spécifiques à l'IDE PyCharm (.idea)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Fichiers temporaires du système d'exploitation
+.DS_Store # Mac OS
+Thumbs.db # Windows
+
+# ---------------------------------------------
+# 2. Exclusions du Frontend (Dépendances Node.js)
+# ---------------------------------------------
+
+# Dossier des dépendances Node.js (qui contient des milliers de fichiers)
+frontend/node_modules/
+
+# ---------------------------------------------
+# 3. Données Volumineuses, Modèles et Outputs (CRITIQUE pour l'IA/Audio)
+# ---------------------------------------------
+
+# Dossiers contenant des fichiers volumineux (modèles de base, checkpoints)
+cache/
+checkpoints/
+
+# Dossiers d'uploads, temporaires et de sortie de conversion
+uploads/
+temp/
+/output/
+
+# Dossier des voix de référence ou d'entraînement (corpusvoices)
+corpusvoices/
+
+# Dossier de packages ou de builds locaux
+audiobook-generator/
+
+# ---------------------------------------------
+# 4. Fichiers de sortie spécifiques
+# ---------------------------------------------
+*.log
+*.mp3
+*.wav
+*.flac
+*.m4a
+*.m4b
